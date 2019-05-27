@@ -487,7 +487,17 @@ blockquote {
 .grid-item--width2 {
   width: 400px;
 }
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+    display: block; 
+    width:auto !important;
 
+	}
+	
+}
 /***********************************
 ************************************
 Responsive media queries
@@ -502,7 +512,6 @@ Responsive media queries
     bottom: 0;
     right: 0;
   }
-
   .footer-main {
     text-align: center;
   }
